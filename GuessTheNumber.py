@@ -1,4 +1,8 @@
-#A simple game to guess a randomly generated number. Difficulty can be set by the user.
+# A simple game to guess a randomly generated number. Difficulty can be set by the user.
+# Author: Nimesh Nischal
+# E-mail: n.nischal.1994@gmail.com
+
+# My custom module
 import nimesh_app_basics
 import math
 
@@ -75,15 +79,14 @@ def play_game():
 
 
 # ------------------ Main program ------------------ #
-difficulty_levels_values = { 10:"Noobie",
-                             50:"Very Easy",
-                             100:"Easy",
-                             500:"Mediocre",
-                             1000:"Good",
-                             5000:"Hard",
-                             10000:"Very Hard",
-                             100000 : "Insane!!"}
-
+difficulty_levels_values = { 10: "Noobie",
+                             50: "Very Easy",
+                             100: "Easy",
+                             500: "Mediocre",
+                             1000: "Good",
+                             5000: "Hard",
+                             10000: "Very Hard",
+                             100000: "Insane!!"}
 app_name = "Guess The Number"
 
 while True:
