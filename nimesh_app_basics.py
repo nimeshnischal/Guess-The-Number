@@ -49,7 +49,7 @@ def get_valid_y_n_opinion(input_message):
             print("Wrong input. Please try again ( y / n ): ", end="")
             continue
         break
-    if user_choice in user_choice_no_options:
+    if user_choice.lower() in user_choice_no_options:
         return False
     else:
         return True
