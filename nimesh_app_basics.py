@@ -29,6 +29,16 @@ def get_int_input(input_message):
             continue
 
 
+def get_non_empty_string_input(input_message, error_message):
+    x = input("Please enter a non-empty string: " if input_message is None else input_message)
+    if x == "":
+        print("Invalid Input! A non-empty string please."
+                              if error_message is None else error_message)
+        return get_non_empty_string_input(input_message, error_message)
+    else:
+        return x
+
+
 # Function to generate a random number between two numbers, including those two numbers
 def get_random_int_in_range(min_num, max_num):
     return random.randint(min_num,max_num)
